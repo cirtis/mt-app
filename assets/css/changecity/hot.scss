@@ -1,0 +1,24 @@
+.m-hcity {
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+  a{
+    color:#f76120;
+  };
+
+  dl {
+    display: flex;
+
+    dt {
+      font-size: 16px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    dd {
+      margin: 0 20px;
+      color: #666;
+      line-height: 22px;
+    }
+  }
+}
