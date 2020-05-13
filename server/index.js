@@ -11,6 +11,8 @@ import consola from 'consola'
 import geo from './interface/geo'
 import search from './interface/search'
 import category from './interface/category'
+import cart from './interface/cart'
+import order from './interface/order'
 //别忘记引入路由表
 const {Nuxt, Builder} = require('nuxt')
 
@@ -59,6 +61,8 @@ async function start() {
   app.use(geo.routes()).use(geo.allowedMethods())
   app.use(search.routes()).use(search.allowedMethods())
   app.use(category.routes()).use(category.allowedMethods())
+  app.use(cart.routes()).use(cart.allowedMethods())
+  app.use(order.routes()).use(order.allowedMethods())
 
   await nuxt.ready()
   // Build in development

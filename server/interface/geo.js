@@ -11,7 +11,10 @@ let key='52XBZ-P4UCD-FTF4P-PWYSM-KE6P5-DCB6Q'
 router.get('/getPosition', async (ctx) => {
   let res=await axios.get(`http://whois.pconline.com.cn/ipJson.jsp?json=true`)
   //console.log('res为',res)
-  let ip=res.data.ip
+  // let ip=res.data.ip
+  //上面为本机ip，下面将为了进行更好的测试选用一个北京的ip
+  let ip='61.135.17.68'
+
   //console.log('ip地址为',ip)
   let {status:status,data:data}= await axios.get(`https://apis.map.qq.com/ws/location/v1/ip?ip=${ip}&key=${key}`)
   //console.log(data)

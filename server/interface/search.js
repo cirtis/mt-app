@@ -69,7 +69,7 @@ router.get('/products', async (ctx) => {
     ctx.body = {
       product,
       more: ctx.isAuthenticated() ? more: [],
-      login: ctx.isAuthenticated()
+      login: ctx.isAuthenticated()//判断是否登录
     }
   }else{
     ctx.body = {

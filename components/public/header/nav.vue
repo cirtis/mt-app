@@ -86,11 +86,6 @@
   </div>
 </template>
 
-<script>
-  export default {
-    name: "nav"
-  }
-</script>
 
 <style scoped lang="scss">
   @import "~@/assets/css/public/header/topbar.scss";
