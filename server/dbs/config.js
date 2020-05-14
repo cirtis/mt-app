@@ -14,10 +14,10 @@ export default{
       return 'smtp.qq.com'
     },
     get user(){
-      return '316318771@qq.com'
+      return ''//填入你自己的qq邮箱地址
     },
     get pass(){
-      return 'skoqngpkanddbicc'
+      return ''//你的密钥
     },
     get code(){//生成验证码
       return ()=>{
